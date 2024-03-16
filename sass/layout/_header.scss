@@ -1,0 +1,71 @@
+.header {
+
+
+  &__main {
+    // background-color: red;
+    // position: relative;
+
+
+
+    &--text-box {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      width: 89.6rem;
+      height: 44.3rem;
+      margin: 0 auto;
+
+
+      z-index: 1;
+      // position: absolute;
+      top: 10rem;
+
+      // left: 0;
+
+      position: relative;
+
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        padding: 0 2rem;
+      }
+
+
+
+      .backdrop {
+        width: 85rem;
+        height: 59rem;
+        margin: 0 auto;
+        z-index: -99;
+        position: absolute;
+        top: -4.7rem;
+        left: 0;
+
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+
+
+    .hero-image-box {
+      height: 70rem;
+      width: 100%;
+      margin-top: 10rem;
+
+      img {
+        width: 100%;
+      }
+
+      @include padCenter;
+
+    }
+  }
+}

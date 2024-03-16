@@ -1,0 +1,83 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin padCenter {
+  padding-right: 3vw;
+  padding-left: 3vw;
+
+  @include respond(tab-port) {
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+}
+
+
+
+// Media Queries
+/*
+	0 - 400px: 	Small Phone
+	400 - 600px: 	Phone
+	600 - 760px: 	Big Phone
+	760 - 900px: 	Tablet Portrait
+	900 - 1200px: 	Tablet Landscape
+	[1200 - 1800px] Normal styles apply
+	1800px + :	Big Desktop
+
+	$breakpoint options
+	- sm-phone
+	- phone
+	- big-phone
+	- tab-port
+	- tab-land
+	- big-desktop
+
+	1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint ==sm-phone {
+    @media only screen and (max-width: 25em) {
+      // 400px
+      @content;
+    }
+  }
+
+  @if $breakpoint ==phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint ==big-phone {
+    @media only screen and (max-width: 47.5em) {
+      // 760px
+      @content;
+    }
+  }
+
+  @if $breakpoint ==tab-port {
+    @media only screen and (max-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint ==tab-land {
+    @media only screen and (max-width: 75em) {
+      // 1200px
+      @content;
+    }
+  }
+
+  @if $breakpoint ==big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      // 1800px
+      @content;
+    }
+  }
+}
