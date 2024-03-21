@@ -17,6 +17,13 @@
   }
 
   &__nav {
+    display: block;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+
 
     &--links {
       @include absCenter;

@@ -16,6 +16,11 @@
       height: 44.3rem;
       margin: 0 auto;
 
+      @include respond (phone) {
+        width: 100%;
+        // width: 34.2rem;
+        display: block;
+      }
 
       z-index: 1;
       // position: absolute;
@@ -25,9 +30,26 @@
 
       position: relative;
 
+      .intro-span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .6rem 1.2rem;
+        background-color: $grey-2;
+        border: .2px solid $grey-1;
+        // gap: 1rem;
+        border-radius: 10rem;
+        margin-bottom: 1.6rem;
+
+
+      }
 
       h1 {
         text-align: center;
+
+        @include respond (big-phone) {
+          display: block;
+        }
       }
 
       p {
@@ -57,8 +79,14 @@
 
     .hero-image-box {
       height: 70rem;
-      width: 100%;
-      margin-top: 10rem;
+      width: 100vw;
+
+      margin: 20rem 0 10rem;
+
+      @include respond (phone) {
+        // width: 38rem;
+        height: 38rem;
+      }
 
       img {
         width: 100%;
@@ -66,6 +94,46 @@
 
       @include padCenter;
 
+      @include respond (phone) {
+        display: block;
+      }
+
+    }
+  }
+
+  .featured {
+    // background-color: blue;
+    margin: 0 29rem 19.2rem;
+    display: block;
+
+    p {
+      // display: flex;justify-content: center;align-items: center;
+      text-align: center;
+      margin-bottom: 4.8rem;
+      color: $text-color-1;
+    }
+
+    .logos {
+      // background-color: red;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      height: 6rem;
+      gap: 8rem;
+      // flex: 0 0 auto;
+
+      .logo {
+        // background-color: yellow;
+        max-height: 6rem;
+        max-width: 8rem;
+        // object-fit: contain;a
+        // align-self: flex-end;
+
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

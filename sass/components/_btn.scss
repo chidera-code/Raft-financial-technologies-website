@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   font-size: 1.6rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
 
 }
@@ -55,4 +55,10 @@
 
 .btn-green:active {
   transform: scale(.9);
+}
+
+.header__main--text-box .btn-pad {
+  padding: 1.6rem 3.2rem;
+  border-radius: 10rem;
+  white-space: nowarp;
 }

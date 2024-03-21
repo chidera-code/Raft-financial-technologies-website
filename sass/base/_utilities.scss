@@ -1,0 +1,9 @@
+.container {
+  padding: 0 7.2rem;
+
+
+
+  @include respond (phone) {
+    padding: 0 2.4;
+  }
+}
