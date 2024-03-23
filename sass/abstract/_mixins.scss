@@ -6,16 +6,14 @@
 }
 
 @mixin padCenter {
-  padding-right: 3vw;
-  padding-left: 3vw;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
 
   @include respond(tab-port) {
     padding-right: 1vw;
     padding-left: 1vw;
   }
 }
-
-
 
 // Media Queries
 /*
