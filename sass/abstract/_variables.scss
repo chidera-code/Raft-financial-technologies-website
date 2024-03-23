@@ -1,9 +1,12 @@
 $background-color: #060606;
-$primary-color :#fff;
+$primary-color: #fff;
 $grey-1: #989898;
-$grey-2: #474545;
-$text-color-1 : #BDBDBD;
-;
+$grey-2: rgba(255, 255, 255, 0.15);
+$text-color-1: #bdbdbd;
 $grey-dark-1: #131313;
 $trans-white: rgba(255, 255, 255, 0.4);
-$gradient: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.242));
+$gradient: linear-gradient(
+  to bottom,
+  rgba(255, 255, 255, 0),
+  rgba(255, 255, 255, 0.242)
+);

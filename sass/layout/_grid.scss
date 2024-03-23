@@ -1,34 +1,25 @@
 .grid__3--cols {
   display: grid;
+  grid-auto-rows: 50rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-  margin: 0 3vw;
+  margin: 0 5vw;
 
-  @include respond (tab-port) {
+  @include respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
-
   }
 
-  @include respond (phone) {
-    grid-template-columns: 1fr;
-
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .box {
     background-color: $grey-dark-1;
-    border: 1px solid $trans-white;
+    border: 1px solid rgba($primary-color, 0.15);
     border-radius: 1.2rem;
-
   }
 }
 
 .span {
   grid-column: span 2;
-
-  @include respond (tab-port) {
-
-    grid-column: span 1;
-
-  }
-
 }
