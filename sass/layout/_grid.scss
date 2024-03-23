@@ -9,8 +9,8 @@
 
   }
 
-  @include respond (tab-port) {
-    grid-template-columns: repeat(2, 1fr);
+  @include respond (phone) {
+    grid-template-columns: 1fr;
 
   }
 
@@ -24,5 +24,11 @@
 
 .span {
   grid-column: span 2;
+
+  @include respond (tab-port) {
+
+    grid-column: span 1;
+
+  }
 
 }
