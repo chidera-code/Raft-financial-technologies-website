@@ -115,7 +115,7 @@ body {
 
 .paragraph {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 4400;
   line-height: 130%;
   text-transform: capitalize;
 
@@ -134,4 +134,62 @@ body {
   @include respond (phone) {
     font-size: 1.6rem;
   }
+}
+
+.heading-secondary {
+  font-size: 7.6rem;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include respond (big-desktop) {
+    font-size: 8.2rem;
+  }
+
+  @include respond (tab-land) {
+    font-size: 7.2rem;
+  }
+
+  @include respond (tab-port) {
+    font-size:
+      6.4rem;
+  }
+
+  @include respond (big-phone) {
+    font-size: 4.8rem;
+  }
+
+  @include respond (phone) {
+    font-size: 3.6rem;
+    line-height: 130%;
+
+  }
+
+  @include respond (sm-phone) {
+    font-size: 3rem;
+    line-height: 110%;
+
+  }
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 130%;
+
+  @include respond (big-phone) {
+    font-size: 2.8rem;
+
+  }
+
+  @include respond (phone) {
+    font-size: 2.4rem;
+
+  }
+
+}
+
+.small-text {
+  font-size: 1.6rem;
+  color: $text-color-1;
+  font-weight: 400;
 }

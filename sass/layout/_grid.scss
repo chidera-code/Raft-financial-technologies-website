@@ -1,0 +1,28 @@
+.grid__3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin: 0 3vw;
+
+  @include respond (tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  @include respond (tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .box {
+    background-color: $grey-dark-1;
+    border: 1px solid $trans-white;
+    border-radius: 1.2rem;
+
+  }
+}
+
+.span {
+  grid-column: span 2;
+
+}
