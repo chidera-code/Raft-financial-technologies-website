@@ -11,9 +11,16 @@
       margin: 0 auto;
       padding: 0 2rem;
 
-      @include respond(phone) {
-        width: 100%;
-        display: block;
+      @include respond (tab-port) {
+        padding: 0 5rem;
+      }
+
+      @include respond (big-phone) {
+        padding: 0 2rem;
+      }
+
+      @include respond (phone) {
+        padding: 0 1.5rem;
       }
 
       .intro-span {
@@ -30,14 +37,15 @@
       h1 {
         text-align: center;
 
-        @include respond(big-phone) {
-          display: block;
-        }
       }
 
       p {
         text-align: center;
         padding: 0 2rem;
+
+        @include respond (sm-phone) {
+          padding: 0 1rem;
+        }
       }
 
       .backdrop {
@@ -56,43 +64,152 @@
 
     .hero-image-box {
       width: 100vw;
-      margin: 10rem 0 10rem;
+      margin: 10rem 0;
       @include padCenter;
+
+      @include respond (tab-port) {
+        margin: 8rem 0;
+      }
+
+      @include respond (big-phone) {
+        margin: 5rem 0;
+      }
+
+      @include respond (phone) {
+        margin: 3rem 0;
+      }
+
+      @include respond (sm-phone) {
+        margin: 4rem 0 0;
+      }
 
       img {
         width: 100%;
-      }
-
-      @include respond(phone) {
-      }
-
-      @include respond(phone) {
         display: block;
+        border-radius: 1rem;
+
       }
+
+      @include respond (tab-port) {
+        height: 50vh;
+        object-fit: contain;
+        object-position: center;
+
+        img {
+          height: 100%;
+          width: 100%;
+
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
     }
   }
 
   .featured {
-    margin: 0 29rem 0;
-    display: block;
+    margin: 0 28rem;
+
+
+
+
+    @include respond (tab-land) {
+      margin: 0 20rem;
+
+    }
+
+    @include respond (tab-port) {
+      margin: 0 10rem;
+
+    }
+
+    @include respond (big-phone) {
+      margin: 0 3rem;
+
+
+
+    }
+
 
     p {
       text-align: center;
       margin-bottom: 4.8rem;
       color: $text-color-1;
+
+
+      @include respond (tab-port) {
+        margin-bottom: 3.6rem;
+      }
+
+      @include respond (big-phone) {
+        margin-bottom: 3rem;
+      }
+
+      @include respond (phone) {
+        margin-bottom: 2rem;
+      }
     }
+
 
     .logos {
       display: flex;
       justify-content: space-between;
-      align-items: end;
+      align-items: center;
 
-      // height: 6rem;
+
+
+
+      @include respond (big-phone) {
+        display: none;
+        width: 100vh;
+
+        .responsive {
+          display: block;
+        }
+      }
+
+
+
+      .logo {
+        width: 80px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .bg-logo {
+        width: 120px;
+
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .responsive {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
       gap: 8rem;
 
       .logo {
-        // max-height: 6rem;
-        max-width: 8rem;
+        width: 80px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .bg-logo {
+        width: 120px;
+
+        @include respond(big-phone) {
+          gap: 5rem;
+        }
+
 
         img {
           width: 100%;
@@ -100,4 +217,15 @@
       }
     }
   }
+}
+
+marquee {
+
+  display: none;
+
+  @include respond(big-phone) {
+    display: block;
+  }
+
+
 }

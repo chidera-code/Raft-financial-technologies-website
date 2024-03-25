@@ -1,17 +1,20 @@
 .section__learn {
-  margin: 20rem 0;
+  margin: 20rem 0 10rem;
 
-  @include respond(phone) {
-    margin: 10 0;
+  @include respond(tab-port) {
+    margin: 12rem 0;
+  }
+
+  @include respond(big-phone) {
+    margin: 10rem 0;
   }
 
   &--text-box {
     padding: 0 27.2rem;
     margin-bottom: 10rem;
 
-    @include respond(big-phone) {
-      padding: 0 4rem;
-      margin-bottom: 6rem;
+    @include respond(tab-land) {
+      padding: 0 18rem;
     }
 
     @include respond(tab-port) {
@@ -19,8 +22,9 @@
       margin-bottom: 8rem;
     }
 
-    @include respond(tab-land) {
-      padding: 0 18rem;
+    @include respond(big-phone) {
+      padding: 0 4rem;
+      margin-bottom: 6rem;
     }
 
     @include respond(phone) {
@@ -41,6 +45,16 @@
       color: $grey-1;
       text-align: center;
       padding: 0 4rem;
+
+      @include respond(phone) {
+        padding: 0 2rem;
+
+      }
+
+      @include respond(sm-phone) {
+        padding: 0 1.5rem;
+      }
+
     }
   }
 
@@ -52,7 +66,7 @@
       background-repeat: no-repeat;
       background-position: top;
       background-size: contain;
-      height: 50rem;
+      overflow: hidden;
 
       .composition {
         position: relative;
