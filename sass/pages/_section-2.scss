@@ -1,0 +1,59 @@
+.section__more {
+
+  .compostion {
+    width: 100%;
+    position: relative;
+
+    .sec-img {
+      width: 100%;
+    }
+
+
+
+    &::after {
+      content: url("../asset/img/Frame\ 148.png");
+      position: absolute;
+      top: 0;
+
+      left: 0;
+      display: none;
+
+    }
+
+    &::before {
+      content: url("../asset/img/Frame\ 149.png");
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: none;
+
+
+    }
+
+    margin-bottom: 8rem;
+
+    @include respond (tab-port) {
+      margin-bottom: 7rem;
+    }
+
+
+    @include respond (big-phone) {
+      margin-bottom: 6rem;
+    }
+
+
+    @include respond (phone) {
+      margin-bottom: 5.6rem;
+    }
+
+    @include respond (sm-phone) {
+      margin-bottom: 5rem;
+    }
+
+
+  }
+
+
+  .grid__3--cols {}
+}

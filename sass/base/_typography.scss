@@ -114,9 +114,11 @@ body {
 
 .paragraph {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 130%;
   text-transform: capitalize;
+  color: $text-color-1;
+  text-align: center;
 
   @include respond (big-desktop) {
     font-size: 2.4rem;
@@ -139,6 +141,7 @@ body {
   font-size: 7.6rem;
   font-weight: 400;
   line-height: 120%;
+  text-transform: capitalize;
 
   @include respond (big-desktop) {
     font-size: 8.2rem;

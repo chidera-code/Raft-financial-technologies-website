@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
   <link rel="icon" href="asset/logo/import.png" type="x-icon" />
   <link rel="stylesheet" href="css/main.css" />
@@ -45,7 +46,7 @@
 
     <div class="header__main">
       <div class="header__main--text-box">
-        <span class="intro-span">
+        <span class="intro-span" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <span>Introducing Raft Cards</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -53,13 +54,13 @@
               fill="white" />
           </svg>
         </span>
-        <h1 class="heading-primary">Building the future of banking.</h1>
-        <p class="heading-description">
-          Experience the future of banking with RAFT. We're here to empower
+        <h1 class="heading-primary" data-aos="fade-up" data-aos-offset="100">Building the future of banking.</h1>
+        <p class="heading-description" data-aos="fade-up" data-aos-offset="340">
+          Experience the future of banking with RAFT. We're here to <br> empower
           your financial journey.
         </p>
 
-        <a href="#" class="btn-green btn btn-pad">get started </a>
+        <a href="#" class="btn-green btn btn-pad" data-aos="fade-left" data-aos-offset="355">get started </a>
         <div class="backdrop">
           <img src="asset/img/Grid.png" alt="grid" />
         </div>
@@ -71,7 +72,8 @@
     </div>
 
     <div class="featured">
-      <p class="paragraph">Featured and seen in</p>
+      <p class="paragraph" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Featured and seen
+        in</p>
       <div class="logos">
         <figure class="bg-logo">
           <img src="asset/logo/Forbes_logo 1.png" alt="forbes logo" />
@@ -90,33 +92,33 @@
         </figure>
       </div>
       <marquee behavior="seamless">
-        <div class=" responsive">
-          <figure class="bg-logo">
-            <img src="asset/logo/Forbes_logo 1.png" alt="forbes logo" />
-          </figure>
-          <figure class="logo">
-            <img src="asset/logo/cnbc-1.png" alt="CNBC logo" />
-          </figure>
-          <figure class="bg-logo">
-            <img src="asset/logo/bloomberg-1.png" alt="bloomberg logo image" />
-          </figure>
-          <figure class="bg-logo">
-            <img src="asset/logo/reuters-2-1 1.png" alt="" />
-          </figure>
-          <figure class="logo">
-            <img src="asset/logo/cnn-logo 1.png" alt="CNN logo image" />
-          </figure>
-        </div>
-      </marquee>
+        <div class=" responsive" ">
+          <figure class=" bg-logo" data-aos="zoom-in   data-aos-offset=" 300" data-aos-easing="ease-in-sine"">
+          <img src=" asset/logo/Forbes_logo 1.png" alt="forbes logo" />
+        </figure>
+        <figure class="logo" data-aos="zoom-in   data-aos-offset=" 500" data-aos-easing="ease-in-sine" ">
+            <img src=" asset/logo/cnbc-1.png" alt="CNBC logo" />
+        </figure>
+        <figure class="bg-logo" data-aos="zoom-in  data-aos-offset=" 600" data-aos-easing="ease-in-sine"">
+            <img src=" asset/logo/bloomberg-1.png" alt="bloomberg logo image" />
+        </figure>
+        <figure class="bg-logo" data-aos="zoom-in  data-aos-offset=" 300" data-aos-easing="ease-in-sine"">
+            <img src=" asset/logo/reuters-2-1 1.png" alt="" />
+        </figure>
+        <figure class="logo" data-aos="zoom-in  data-aos-offset=" 300" data-aos-easing="ease-in-sine"">
+            <img src=" asset/logo/cnn-logo 1.png" alt="CNN logo image" />
+        </figure>
+    </div>
+    </marquee>
     </div>
   </header>
 
   <section class="section__learn">
     <div class="section__learn--text-box">
-      <h2 class="heading-secondary">
+      <h2 class="heading-secondary" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         Elevate Your Financial Journey with RAFT
       </h2>
-      <p class="paragraph">
+      <p class="paragraph" data-aos="fade-left" data-aos-offset="355">
         RAFT offers a world of financial possibilities. From investments to
         payments, we've got you covered. Join us and unlock your financial
         potential today.
@@ -124,62 +126,90 @@
     </div>
 
     <div class="grid__3--cols">
-      <div class="box span">
+      <div class="box span" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="200">
         <figure class="composition">
           <img src="asset/img/comp-1.png" alt="components" />
           <div class="overlay"></div>
         </figure>
-        <div class="text-box">
+        <div class="text-box" data-aos="fade-up">
           <h3 class="heading-tertiary">Seamless Payments</h3>
           <p class="small-text">
             Enjoy secure, seamless transactions that make managing your money
-            a breeze.
+            a <br> breeze.
           </p>
         </div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="250">
         <figure class="composition right">
           <img src="asset/img/comp-2.png" alt="components" />
           <div class="overlay"></div>
         </figure>
 
-        <div class="text-box">
-          <h3 class="heading-tertiary">Seamless Payments</h3>
+        <div class="text-box" data-aos="fade-up">
+          <h3 class="heading-tertiary">Smart Investing</h3>
           <p class="small-text">
-            Enjoy secure, seamless transactions that make managing your money
-            a breeze.
+            Grow your wealth confidently with our personalized investment solutions, tailored to your financial
+            goals.
           </p>
         </div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="200">
         <figure class="composition">
           <img src="asset/img/comp-3.png" alt="components" />
 
           <div class="overlay"></div>
         </figure>
-        <div class="text-box">
-          <h3 class="heading-tertiary">Seamless Payments</h3>
+        <div class="text-box" data-aos="fade-up">
+          <h3 class="heading-tertiary">Wealth Management</h3>
           <p class="small-text">
-            Enjoy secure, seamless transactions that make managing your money
-            a breeze.
+            Make informed decisions for your financial future with our wealth management expertise.
           </p>
         </div>
       </div>
-      <div class="box span">
+      <div class="box span" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="250">
         <figure class="composition">
           <img src="asset/img/comp-4.png" alt="components" />
           <div class="overlay"></div>
         </figure>
-        <div class="text-box">
-          <h3 class="heading-tertiary">Seamless Payments</h3>
+        <div class="text-box" data-aos="fade-up">
+          <h3 class="heading-tertiary"> Financial Planning</h3>
           <p class="small-text">
-            Enjoy secure, seamless transactions that make managing your money
-            a breeze.
+            Achieve your financial dreams with our comprehensive financial planning <br> services, guiding you toward a
+            secure future.
           </p>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section__more">
+    <div class="section__text-box">
+
+      <h2 class="heading-secondary" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">your
+        financial freedom,<br> your way</h2>
+      <p class="paragraph" data-aos="fade-left" data-aos-offset="355">
+        We believe that managing your finances should be effortless and cost-effective. <br> That's why we offer you the
+        freedom you deserve
+      </p>
+    </div>
+
+    <figure class="compostion container">
+      <img src="asset/img/hero-2.png" class="sec-img" alt="three girls happy about fintech ">
+
+
+    </figure>
+
+    <div class="grid__3--cols-sm">
+    </div>
+
+    <div class="green">
+      <p class="bg-text"></p>
+    </div>
+  </section>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
