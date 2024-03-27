@@ -1,0 +1,73 @@
+.section__about {
+  .section__text-box {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100rem, 100%);
+
+    padding: 0 2rem;
+
+    h2 {
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+
+
+  .grid__2--cols {
+
+
+
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      background-color: $grey-dark-1;
+
+
+
+
+      .box-text-box {
+        flex: 1;
+        // background-color: red;
+      }
+
+
+      .img-box {
+
+        flex: 3;
+        // background-color: green;
+        position: relative;
+
+        .composition {
+          width: 20rem;
+          // background-color: yellow;
+
+          .backdrrop {
+            width: 40rem;
+
+          }
+
+          @include absCenter;
+
+          img {
+
+            width: 100%;
+
+
+            object-fit: contain;
+            display: block;
+          }
+        }
+
+      }
+
+    }
+  }
+}

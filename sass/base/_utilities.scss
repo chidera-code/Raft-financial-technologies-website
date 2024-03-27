@@ -1,8 +1,12 @@
 .container {
   padding: 0 7.2rem;
 
-  @include respond(phone) {
-    padding: 0 2.4;
+  @include respond (tab-port) {
+    padding: 0 3.6rem;
+  }
+
+  @include respond (big-phone) {
+    padding: 0 2.4rem;
   }
 }
 
@@ -22,8 +26,10 @@ section {
     padding: 0 25rem;
     margin-bottom: 10rem;
 
+
     @include respond(tab-land) {
-      padding: 0 18rem;
+      padding: 0 15rem;
+      margin-bottom: 8rem;
     }
 
     @include respond(tab-port) {
@@ -38,7 +44,7 @@ section {
 
     @include respond(phone) {
       padding: 0 2.4rem;
-      margin-bottom: 4rem;
+      margin-bottom: 8rem;
     }
 
     @include respond(sm-phone) {

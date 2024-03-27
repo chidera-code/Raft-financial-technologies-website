@@ -45,3 +45,19 @@
 
   }
 }
+
+.grid__2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 67rem;
+  gap: 5.6rem;
+
+  @include respond (big-phone) {
+    grid-auto-rows: 50rem;
+  }
+
+  @include respond (phone) {
+    grid-auto-rows: 44rem;
+    grid-template-columns: 1fr;
+  }
+}
