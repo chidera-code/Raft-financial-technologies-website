@@ -218,3 +218,38 @@ body {
     font-size: 1.6rem;
   }
 }
+
+.big-text {
+  font-size: 12.8rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: $color-black;
+
+
+  @include respond (big-desktop) {
+    font-size: 13rem;
+  }
+
+
+  @include respond (tab-land) {
+    font-size: 12.4rem;
+  }
+
+
+  @include respond (tab-port) {
+    font-size: 10rem;
+  }
+
+  @include respond (big-phone) {
+    font-size: 8rem;
+  }
+
+  @include respond (phone) {
+    font-size: 6rem;
+  }
+
+  @include respond (sm-phone) {
+    font-size: 5rem;
+  }
+
+}

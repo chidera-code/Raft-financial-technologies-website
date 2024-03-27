@@ -5,8 +5,9 @@ $grey-2: rgba(255, 255, 255, 0.15);
 $text-color-1: #bdbdbd;
 $grey-dark-1: #131313;
 $trans-white: rgba(255, 255, 255, 0.4);
-$gradient: linear-gradient(
-  to bottom,
-  rgba(255, 255, 255, 0),
-  rgba(255, 255, 255, 0.242)
-);
+$gradient: linear-gradient(to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.242));
+
+$color-black: #070606;
+$accent-green: #48D64C;
