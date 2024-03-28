@@ -14,6 +14,7 @@
     }
 
     p {
+      align-self: flex-start;
       text-align: left;
     }
   }
@@ -29,6 +30,14 @@
       display: flex;
       flex-direction: column;
       background-color: $grey-dark-1;
+      // align-items: flex-start;
+      // justify-content: center;
+      gap: 5rem;
+      border-radius: 1.2rem;
+      padding: 5.2rem;
+      border: 1px solid 131313;
+      border: 1px solid rgba(255, 255, 255, .15);
+
 
 
 
@@ -36,6 +45,10 @@
       .box-text-box {
         flex: 1;
         // background-color: red;
+
+        p {
+          text-align: left;
+        }
       }
 
 
@@ -46,15 +59,29 @@
         position: relative;
 
         .composition {
+          @include absCenter;
           width: 20rem;
           // background-color: yellow;
+          align-self: center;
+          position: relative;
 
-          .backdrrop {
-            width: 40rem;
+          .backdrop {
+            height: 39rem;
+            width: 60rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            z-index: -1;
+            object-fit: cover;
+
+
+            img {
+              width: 100%;
+            }
 
           }
 
-          @include absCenter;
 
           img {
 
