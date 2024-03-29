@@ -63,17 +63,16 @@
           width: 20rem;
           // background-color: yellow;
           align-self: center;
-          position: relative;
+
 
           .backdrop {
-            height: 39rem;
             width: 60rem;
-            position: absolute;
-            top: 0;
-            left: 0;
+
 
             z-index: -1;
             object-fit: cover;
+            @include absCenter;
+
 
 
             img {
@@ -96,5 +95,38 @@
       }
 
     }
+  }
+
+  .rating {
+    margin-top: 10rem;
+
+    @include respond (tab-port) {
+      margin-top: 8rem;
+    }
+
+    @include respond (big-phone) {
+      margin-top: 7rem;
+    }
+
+    @include respond (phone) {
+      margin-top: 6rem;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .bx-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
   }
 }
