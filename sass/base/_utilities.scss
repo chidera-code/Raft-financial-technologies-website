@@ -25,6 +25,8 @@ section {
   .section__text-box {
     padding: 0 25rem;
     margin-bottom: 10rem;
+    width: 100vw;
+    overflow-x: hidden;
 
 
     @include respond(tab-land) {
