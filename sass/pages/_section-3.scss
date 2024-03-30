@@ -1,12 +1,12 @@
 .section__about {
-  .section__text-box {
 
+  .section__text-box {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: min(100rem, 100%);
-
+    overflow-x: hidden;
     padding: 0 2rem;
 
     h2 {
@@ -19,12 +19,7 @@
     }
   }
 
-
-
   .grid__2--cols {
-
-
-
 
     .box {
       display: flex;
@@ -36,11 +31,8 @@
       border-radius: 1.2rem;
       padding: 5.2rem;
       border: 1px solid 131313;
-      border: 1px solid rgba(255, 255, 255, .15);
-
-
-
-
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      overflow: hidden;
 
       .box-text-box {
         flex: 1;
@@ -50,9 +42,7 @@
         }
       }
 
-
       .img-box {
-
         flex: 3;
         position: relative;
 
@@ -61,51 +51,40 @@
           width: 20rem;
           align-self: center;
 
-
           .backdrop {
             width: 60rem;
-
 
             z-index: -1;
             object-fit: cover;
             @include absCenter;
 
-
-
             img {
               width: 100%;
             }
-
           }
 
-
           img {
-
             width: 100%;
-
-
             object-fit: contain;
             display: block;
           }
         }
-
       }
-
     }
   }
 
   .rating {
     margin-top: 10rem;
 
-    @include respond (tab-port) {
+    @include respond(tab-port) {
       margin-top: 8rem;
     }
 
-    @include respond (big-phone) {
+    @include respond(big-phone) {
       margin-top: 7rem;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 6rem;
     }
 
@@ -113,7 +92,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
     }
 
     .bx-1 {
@@ -121,9 +99,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
     }
-
-
   }
 }
