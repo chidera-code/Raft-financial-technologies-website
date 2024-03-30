@@ -44,7 +44,6 @@
 
       .box-text-box {
         flex: 1;
-        // background-color: red;
 
         p {
           text-align: left;
@@ -55,13 +54,11 @@
       .img-box {
 
         flex: 3;
-        // background-color: green;
         position: relative;
 
         .composition {
           @include absCenter;
           width: 20rem;
-          // background-color: yellow;
           align-self: center;
 
 

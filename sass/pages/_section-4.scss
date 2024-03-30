@@ -1,0 +1,40 @@
+.section-4 {
+
+  .bg-img {
+    width: 100vw;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 12rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .section__text-box {
+    margin-bottom: 11.8rem;
+
+
+    span {
+      justify-self: center;
+      color: $accent-green;
+      display: block;
+
+    }
+  }
+
+
+  .img-box {
+
+
+    .composition {
+      width: 30rem;
+      margin: 0 auto 12rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
