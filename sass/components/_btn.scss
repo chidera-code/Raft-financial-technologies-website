@@ -62,3 +62,26 @@
   border-radius: 10rem;
   white-space: nowarp;
 }
+
+.arrow:link,
+.arrow:visited{
+  position: relative;
+  display: flex;justify-content: center;align-items: center;
+  padding: 4rem;
+  border-radius: 50%;
+  transform: scale(1);
+  border: 1px solid  $text-color-gray-green;
+  background-color: $primary-color;
+  img{
+width: 5rem;
+    @include absCenter;
+  }
+}
+
+.arrow:hover{
+transform: scale(1.2);
+}
+.arrow:active{
+transform: scale(.9);
+  box-shadow: inset   0 0 2rem 1rem $grey-1;
+}
