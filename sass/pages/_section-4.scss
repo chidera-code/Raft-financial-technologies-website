@@ -37,4 +37,28 @@
       }
     }
   }
+
+  .grid__3--cols-sm {
+    .box {
+      .grid-text-box {
+
+
+
+        .grid-header {
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          gap: .8rem;
+          margin-bottom: 1rem;
+
+          span {
+            color: $primary-color;
+          }
+
+        }
+
+
+      }
+    }
+  }
 }

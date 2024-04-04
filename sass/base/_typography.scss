@@ -1,6 +1,11 @@
 html {
   font-size: 62.5%;
 
+  @include respond(big-desktop) {
+    // 1rem = 12px, (12/16) * 100
+    font-size: 75%;
+  }
+
   @include respond(tab-land) {
     // 1rem = 9px, (9/16) * 100
     font-size: 56.25%;
@@ -11,10 +16,11 @@ html {
     font-size: 50%;
   }
 
-  @include respond(big-desktop) {
-    // 1rem = 12px, (12/16) * 100
-    font-size: 75%;
+  @include respond(phone) {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 47%;
   }
+
 }
 
 body {
@@ -284,7 +290,8 @@ body {
   color: $text-color-1;
 }
 
-.small {
+.small,
+.footer-small {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 130%;
@@ -304,7 +311,8 @@ body {
     font-size: 1.2rem;
   }
 }
-.sm-text{
+
+.sm-text {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 130%;
@@ -312,16 +320,46 @@ body {
   text-transform: uppercase;
 }
 
-.para{
+.para {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0em;
- 
+
 
 
   @include respond(big-desktop) {
     font-size: 2.8rem;
   }
 
+  @include respond(big-phone) {
+    font-size: 1.6rem;
+  }
+
+}
+
+
+.footer-text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 130%;
+
+  @include respond (tab-port) {
+    font-size: 1.8rem;
+  }
+
+  @include respond (big-phone) {
+    font-size: 1.6rem;
+  }
+
+  @include respond (phone) {
+    font-size: 1.4rem;
+  }
+}
+
+.footer-small {
+  @include respond(Phone) {
+    font-size: 1.4rem;
+    color: $primary-color;
+  }
 }
