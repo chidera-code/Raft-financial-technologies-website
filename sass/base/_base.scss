@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background-color: $background-color;
   color: $primary-color;

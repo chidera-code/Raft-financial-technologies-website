@@ -11,7 +11,10 @@
   overflow-x: hidden !important;
 
 
+  @include respond (tab-port) {
+    margin: 0;
 
+  }
 
   .section__text-box {
 
@@ -19,6 +22,80 @@
       padding: 0;
       margin: 0 auto;
     }
+  }
+
+  .grid {
+    display: none;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include respond(tab-port) {
+      display: block;
+
+    }
+
+    .box {
+      // display: flex;
+      border-left: 2px solid $color-black ;
+      width: 100%;
+
+      flex: 1 0 100%;
+
+      @include respond (tab-port) {
+        border: none;
+      }
+
+      .grid-text-box {
+
+
+        padding: 0;
+
+
+        .para {
+          color: $text-color-gray-green;
+          text-align: left;
+          margin: 0;
+          width: 100%;
+
+        }
+      }
+
+      .testimonials__profile {
+        display: flex;
+        flex-direction: colunm;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 5rem;
+        margin: 2.4rem 0 auto 0;
+
+        p {
+          flex: 1;
+          color: $text-color-gray-green;
+          text-align: left;
+          margin: 0;
+
+        }
+
+        figure {
+          height: 8rem;
+          width: 8rem;
+
+          img {
+
+            border-radius: 50%;
+            width: 100%;
+          }
+
+          @include respond (big-phone) {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+      }
+    }
+
   }
 
   .grid__3--cols-bg {
@@ -30,22 +107,21 @@
     gap: 2.4rem;
 
 
-    @include respond(big-phone) {
-      grid-template-columns: repeat(3, 100%);
-
-      overflow: hidden;
-      scroll-behavior: smooth;
+    @include respond(tab-port) {
+      display: none;
 
     }
 
 
 
     .box {
-      display: flex;
+      // display: flex;
       border-left: 2px solid $color-black ;
+      width: 100%;
 
+      flex: 1 0 100%;
 
-      @include respond (big-phone) {
+      @include respond (tab-port) {
         border: none;
       }
 
@@ -54,16 +130,12 @@
 
         padding: 2.4rem 3rem;
 
-        @include respond (big-phone) {
-          padding: 0;
-        }
 
         .para {
-          flex: 1;
           color: $text-color-gray-green;
           text-align: left;
           margin: 0;
-
+          width: 100%;
 
         }
       }

@@ -9,7 +9,7 @@
 
 .btn-1::after {
   backface-visibility: hidden;
-  border: .5px solid rgba(#fff, 0);
+  border: .5px solid transparent;
   bottom: 0;
   content: "";
   display: block;
@@ -28,12 +28,6 @@
 
 
 
-//     content: "";
-//     width: 5rem;
-//     height: 0.5px;
-//     background-color: $primary-color;
-//   }
-// }
 
 .btn-green:link,
 .btn-green:visited {

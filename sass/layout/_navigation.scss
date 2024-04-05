@@ -7,6 +7,7 @@
   padding: 1.6rem 0;
   @include padCenter;
   border-bottom: 1px solid $grey-2;
+  overflow: hidden;
 
   @include respond (tab-port) {
     position: unset;
@@ -31,19 +32,22 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 60rem;
-      width: 50%;
-      border-radius: 50rem;
+      position: relative;
+      height: 100%;
+      width: 60vw;
+
       position: fixed !important;
-      left: 50%;
-      z-index: 2;
-      top: -100rem;
+      top: 0;
+
+      z-index: 9;
+      transform: translateX(-100rem);
       box-shadow: inset 0 0 3rem rgba(0, 255, 0, 0.8);
-      background-color: $color-black;
-      // backdrop-filter: blur(5px);
-      transition: all 500ms ease 500ms;
+      background-color: rgba(0, 0, 0, 0.813);
+      transition: all 500ms ease;
+
 
     }
+
 
 
 
@@ -51,34 +55,42 @@
     &--links {
       @include absCenter;
       // top: 5rem;
-
-      display: inline-flex;
+      display: flex;
       justify-content: center;
       align-items: center;
+      top: unset;
+
 
       a {
         padding: .8rem 4rem;
 
 
         @include respond(tab-port) {
-          padding: 0;
-          font-size: 3rem;
-          z-index: 5;
+          padding: 2rem 1rem;
+          font-size: 2.4rem;
+        }
+
+        @include respond(big-phone) {
+          font-size: 2.4rem;
         }
       }
 
 
 
       @include respond(tab-port) {
-        position: unset;
         padding: 0;
+        margin-bottom: 5rem;
+        align-items: center;
+        justify-content: flex-start;
         flex-direction: column;
+
       }
     }
 
     &--actions {
       display: inline-flex;
       justify-content: center;
+
       align-items: flex-start;
 
       a {
@@ -91,15 +103,25 @@
         }
 
         @include respond(tab-port) {
-          padding: 0;
-          font-size: 3rem;
+          padding: 2rem 1rem;
+          font-size: 2.4rem;
         }
       }
 
       @include respond(tab-port) {
         padding: 0;
-        // display: unset;
+        margin-top: 8rem;
+        align-items: center;
         flex-direction: column;
+      }
+
+    }
+
+    .navigation__nav--link {
+      @include respond (tab-port) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -113,19 +135,31 @@
   }
 
   &__input:checked~&__nav {
-    @include absCenter;
+    // @include absCenter;
+    transform: translateX(0);
+  }
+
+  &__input:checked~&__backdrop {
+    right: 0;
+    transition: all 500ms ease-in-out;
 
   }
 
+
   &__input:checked+&__button {
-    @include absCenter;
-    z-index: 5;
-    top: 10rem;
+    z-index: 15;
+
     background-color: rgba(0, 255, 0, 3);
     border-radius: 50%;
     padding: 1rem;
     height: 7rem;
     width: 7rem;
+
+    position: fixed;
+    right: -1rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 
 
 
@@ -156,11 +190,11 @@
     align-items: center;
     transition: 0.05s ease;
     transition-property: background-color, height;
-    display: none;
     position: relative;
     z-index: 1;
+    display: none;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       display: flex;
     }
 
@@ -195,12 +229,17 @@
       }
     }
   }
-}
 
-.backdrop-nav {
-  height: calc(100vh + 10vh);
-  width: 100%;
-  background-image: linear-gradient(to bottom right, $accent-green, $trans-white);
-  z-index: 9;
 
+  &__backdrop {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: $grey-2;
+    right: -100vw;
+    backdrop-filter: blur(5px);
+    top: 0;
+    transition: all 300ms;
+  }
 }
