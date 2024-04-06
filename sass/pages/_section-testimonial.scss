@@ -25,7 +25,6 @@
   }
 
   .grid {
-    display: none !important;
 
 
     display: grid;
@@ -35,6 +34,8 @@
       display: block;
 
     }
+
+    display: none;
 
     .box {
       // display: flex;
